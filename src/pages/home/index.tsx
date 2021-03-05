@@ -24,7 +24,7 @@ interface HomeProps {
   };
 }
 
-export const Home: NextPage<HomeProps> = ({
+const Home: NextPage<HomeProps> = ({
   level,
   currentExperience,
   challengesCompleted,

@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+.content {
+  height: 100vh;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content svg {
+  margin-top: 1rem;
+}
