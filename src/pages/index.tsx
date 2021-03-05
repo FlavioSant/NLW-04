@@ -1,16 +1,41 @@
 import { NextPage } from "next";
-import { FormEvent, useCallback, useState } from "react";
+import { useRouter } from "next/dist/client/router";
+import { FormEvent, useCallback, useContext, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
+
+import Cookies from "js-cookie";
+import api from "../services/api";
 
 import styles from "../styles/pages/SignIn.module.css";
 
 export const SignIn: NextPage = () => {
+  const router = useRouter();
+
   const [username, setUsername] = useState("");
+  const [hasError, setHasError] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = useCallback(
-    (e: FormEvent<HTMLFormElement>) => {
+    async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      alert("teste " + username);
+      setHasError(false);
+      setError("");
+
+      try {
+        const { data } = await api.get(`/users/${username}`).then();
+
+        const { avatar_url, name, location } = data;
+
+        Cookies.set("name", name);
+        Cookies.set("avatar_url", avatar_url);
+        Cookies.set("location", location);
+
+        router.push("/home");
+      } catch (err) {
+        setHasError(true);
+        setError("Usuário inválido, verifique seu username.");
+        console.log(err);
+      }
     },
     [username]
   );
@@ -37,6 +62,7 @@ export const SignIn: NextPage = () => {
             <FiArrowRight size={24} />
           </button>
         </form>
+        {hasError && <span>{error}</span>}
       </div>
     </div>
   );

@@ -11,12 +11,19 @@ interface Challenge {
   amount: number;
 }
 
+interface UserProps {
+  name: string;
+  avatar_url: string;
+  location: string;
+}
+
 interface ChallengeContextData {
   level: number;
   challengesCompleted: number;
   currentExperience: number;
   experienceToNextLevel: number;
   activeChallenge: Challenge;
+  user: UserProps;
   levelUp: () => void;
   startNewChallenge: () => void;
   resetChallenge: () => void;
@@ -28,6 +35,7 @@ interface ChallengesProviderProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
+  user: UserProps;
 }
 
 export const ChallengesContext = createContext({} as ChallengeContextData);
@@ -43,6 +51,7 @@ export const ChallengesProvider: NextPage<ChallengesProviderProps> = ({
   const [currentExperience, setCurrentExperience] = useState(
     rest.currentExperience ?? 0
   );
+  const user: UserProps = rest.user;
 
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
@@ -113,6 +122,7 @@ export const ChallengesProvider: NextPage<ChallengesProviderProps> = ({
         experienceToNextLevel,
         challengesCompleted,
         activeChallenge,
+        user,
         levelUp,
         startNewChallenge,
         resetChallenge,

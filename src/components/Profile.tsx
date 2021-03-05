@@ -5,13 +5,14 @@ import { ChallengesContext } from "../contexts/ChallengesContext";
 import styles from "../styles/components/Profile.module.css";
 
 export const Profile: NextPage = () => {
-  const { level } = useContext(ChallengesContext);
+  const { level, user } = useContext(ChallengesContext);
 
   return (
     <div className={styles.profileContainer}>
-      <img src="https://github.com/FlavioSant.png" alt="Flavio Santos" />
+      <img src={user.avatar_url} alt={user.name} />
       <div>
-        <strong>Flávio Santos</strong>
+        <strong>{user.name}</strong>
+        <span>{user.location}</span>
         <p>
           <img src="icons/level.svg" alt="Level" />
           Level {level}

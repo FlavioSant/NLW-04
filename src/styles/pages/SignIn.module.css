@@ -81,3 +81,9 @@
 .content form > button:hover {
   background: var(--green);
 }
+
+.content > span {
+  color: var(--text-highlight);
+  margin-top: 1rem;
+  font-weight: 500;
+}
