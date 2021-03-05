@@ -1,0 +1,89 @@
+.container {
+  height: 100vh;
+  background: var(--blue);
+  display: flex;
+  align-items: stretch;
+}
+
+.backgroundContainer {
+  flex: 1;
+  background: url("/sign-in-background.svg") no-repeat;
+}
+
+.content {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.content > img {
+  margin-bottom: 5rem;
+}
+
+.content > h1 {
+  color: var(--white);
+}
+
+.content > div {
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.content > div > p {
+  color: var(--text-highlight);
+  margin-left: 0.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.content form {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.content form > input {
+  height: 4rem;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  color: var(--white);
+  background: linear-gradient(90deg, #4953b8 0%, rgba(73, 83, 184, 0.2) 100%);
+  outline: 0;
+}
+
+.content form > input::placeholder {
+  color: var(--text-highlight);
+}
+
+.content form > input:focus,
+.content form > input:hover {
+  border: 2px solid var(--blue-dark);
+}
+
+.content form > button {
+  height: 4rem;
+  padding: 0 1.2rem;
+  font-size: 0;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background: var(--blue-dark);
+  color: var(--white);
+}
+
+.content form > button:hover {
+  background: var(--green);
+}
+
+.content > span {
+  color: var(--text-highlight);
+  margin-top: 1rem;
+  font-weight: 500;
+}
