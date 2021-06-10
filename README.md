@@ -3,8 +3,8 @@
 </h1>
 
 <p align="center">
+  <a href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -23,10 +23,10 @@
   <img alt="Move.it" src=".github/moveit.png" width="100%">
 </p>
 
-## :movie_camera: Demo
+## 🎥 Preview
 
 <a href="https://moveitfs.vercel.app//">
-  <img src="https://img.shields.io/badge/demo-try%20online-blueviolet?style=for-the-badge" alt="Demo"/>
+  <img src="https://img.shields.io/badge/preview-try%20online-blueviolet?style=for-the-badge" alt="Preview"/>
 </a>
 
 ## 💻 Projeto
