@@ -1,0 +1,74 @@
+.rankCardContainer {
+  display: grid;
+  grid-template-columns: 5.8rem 1fr;
+}
+
+.rankCardContainer + div {
+  margin-top: 0.675rem;
+}
+
+.userPosition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 5px 0 0 5px;
+  margin-right: 0.5rem;
+}
+
+.userPosition span {
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.userContent {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.3fr;
+  align-items: center;
+  background: var(--white);
+  border-radius: 0 5px 5px 0;
+  padding: 1.175rem;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+}
+
+.userProfile > img {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+.userProfile section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.userProfile section h1 {
+  color: var(--title);
+  line-height: 1.5;
+}
+
+.userProfile section p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.userProfile section p img {
+  margin-right: 0.3rem;
+}
+
+.userInfo p {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.userInfo p span {
+  color: var(--blue);
+}

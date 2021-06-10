@@ -1,0 +1,30 @@
+[
+  {
+    "userImg": "https://github.com/diego3g.png",
+    "name": "Diego Fernandes",
+    "level": 43,
+    "challengesCompleted": 127,
+    "xp": 184000
+  },
+  {
+    "userImg": "https://github.com/FlavioSant.png",
+    "name": "Flávio Santos",
+    "level": 35,
+    "challengesCompleted": 97,
+    "xp": 151000
+  },
+  {
+    "userImg": "https://github.com/Glerme.png",
+    "name": "Guilherme Godoi",
+    "level": 36,
+    "challengesCompleted": 99,
+    "xp": 154000
+  },
+  {
+    "userImg": "https://github.com/maykbrito.png",
+    "name": "Mayk Brito",
+    "level": 32,
+    "challengesCompleted": 88,
+    "xp": 130000
+  }
+]

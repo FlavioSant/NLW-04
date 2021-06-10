@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useRouter } from "next/dist/client/router";
-import { FormEvent, useCallback, useContext, useState } from "react";
+import { FormEvent, useCallback, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 import Cookies from "js-cookie";
@@ -22,7 +22,7 @@ export const SignIn: NextPage = () => {
       setError("");
 
       try {
-        const { data } = await api.get(`/users/${username}`).then();
+        const { data } = await api.get(`/users/${username}`);
 
         const { avatar_url, name, location } = data;
 
@@ -34,7 +34,7 @@ export const SignIn: NextPage = () => {
       } catch (err) {
         setHasError(true);
         setError("Usuário inválido, verifique seu username.");
-        console.log(err);
+        console.error({ err });
       }
     },
     [username]

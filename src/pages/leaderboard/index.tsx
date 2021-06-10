@@ -1,7 +1,9 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import users from "../../../users.json";
+
 import { MenuSidebar } from "../../components/MenuSidebar";
-import { IoConstruct } from "react-icons/io5";
+import { RankList } from "../../components/RankList";
 
 import styles from "../../styles/pages/Leaderboard.module.css";
 
@@ -13,8 +15,8 @@ const Leaderboard: NextPage = () => {
       </Head>
       <MenuSidebar />
       <div className={styles.content}>
-        <h1>WORKING</h1>
-        <IoConstruct size={100} />
+        <h1>Leaderboard</h1>
+        <RankList users={users} />
       </div>
     </div>
   );
