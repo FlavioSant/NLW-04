@@ -23,7 +23,7 @@ export const RankCard: NextPage<RankCardProps> = ({ user }) => {
       </div>
       <div className={styles.userContent}>
         <div className={styles.userProfile}>
-          <img src={user.userImg} alt={user.name} />
+          <img src={user.userImg} alt={user.name} title={user.name} />
           <section>
             <h1>{user.name}</h1>
             <p>

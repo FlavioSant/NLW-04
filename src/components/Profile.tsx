@@ -9,7 +9,7 @@ export const Profile: NextPage = () => {
 
   return (
     <div className={styles.profileContainer}>
-      <img src={user.avatar_url} alt={user.name} />
+      <img src={user.avatar_url} alt={user.name} title={user.name} />
       <div>
         <strong>{user.name}</strong>
         <span>{user.location}</span>

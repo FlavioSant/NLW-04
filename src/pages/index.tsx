@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { useRouter } from "next/dist/client/router";
 import { FormEvent, useCallback, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
@@ -42,6 +43,9 @@ export const SignIn: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Login | Move.it</title>
+      </Head>
       <div className={styles.backgroundContainer} />
       <div className={styles.content}>
         <img src="/logo-white.svg" alt="Move.it" />

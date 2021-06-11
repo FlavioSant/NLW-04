@@ -17,7 +17,7 @@ export const MenuSidebar: NextPage = () => {
       <header onClick={() => handleClick("/home")}>
         <img src="logo-icon.svg" alt="Move.it" title="Move.it" />
       </header>
-      <main>
+      <aside>
         <button
           type="button"
           title="Início"
@@ -32,7 +32,7 @@ export const MenuSidebar: NextPage = () => {
         >
           <FiAward size={40} />
         </button>
-      </main>
+      </aside>
       <footer>
         <button type="button" title="Sair" onClick={() => handleClick("/")}>
           Sair <FiLogOut size={24} />

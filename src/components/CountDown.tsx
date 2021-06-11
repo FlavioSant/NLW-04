@@ -33,7 +33,11 @@ export const CountDown: NextPage = () => {
       </div>
 
       {hasFinished ? (
-        <button className={`${styles.countDownButton}`} disabled>
+        <button
+          className={`${styles.countDownButton}`}
+          disabled
+          title="Ciclo encerrado"
+        >
           Ciclo encerrado <MdCheck size={20} className={styles.checkIcon} />
         </button>
       ) : (
@@ -43,6 +47,7 @@ export const CountDown: NextPage = () => {
               type="button"
               className={`${styles.countDownButton} ${styles.countDownButtonActive}`}
               onClick={resetCountDown}
+              title="Abandonar ciclo"
             >
               Abandonar ciclo <MdClose size={20} />
             </button>
@@ -51,6 +56,7 @@ export const CountDown: NextPage = () => {
               type="button"
               className={styles.countDownButton}
               onClick={startCountDown}
+              title="Iniciar um ciclo"
             >
               Iniciar um ciclo <MdPlayArrow size={20} />
             </button>

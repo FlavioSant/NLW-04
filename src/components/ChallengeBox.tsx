@@ -6,9 +6,8 @@ import { CountDownContext } from "../contexts/CountDownContext";
 import styles from "../styles/components/ChallengeBox.module.css";
 
 export const ChallengeBox: NextPage = () => {
-  const { activeChallenge, resetChallenge, completeChallenge } = useContext(
-    ChallengesContext
-  );
+  const { activeChallenge, resetChallenge, completeChallenge } =
+    useContext(ChallengesContext);
   const { resetCountDown } = useContext(CountDownContext);
 
   const handleChallengeSucceeded = useCallback(() => {
@@ -36,6 +35,7 @@ export const ChallengeBox: NextPage = () => {
               type="button"
               className={styles.challengeFailedButton}
               onClick={handleChallengeFailed}
+              title="Falhei"
             >
               Falhei
             </button>
@@ -43,6 +43,7 @@ export const ChallengeBox: NextPage = () => {
               type="button"
               className={styles.challengeSucceededButton}
               onClick={handleChallengeSucceeded}
+              title="Completei"
             >
               Completei
             </button>

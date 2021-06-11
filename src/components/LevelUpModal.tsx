@@ -13,7 +13,7 @@ export const LevelUpModal: NextPage = () => {
         <header>{level}</header>
         <strong>Parabéns</strong>
         <p>Você alcançou um novo level.</p>
-        <button type="button" onClick={closeLevelUpModal}>
+        <button type="button" onClick={closeLevelUpModal} title="Fechar">
           <img src="/icons/close.svg" alt="Fechar Modal" />
         </button>
       </div>

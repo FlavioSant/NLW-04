@@ -37,6 +37,8 @@
 
 .challengeNotActive p img {
   margin-bottom: 1rem;
+  width: 3.75rem;
+  height: 5rem;
 }
 
 .challengeActive {
