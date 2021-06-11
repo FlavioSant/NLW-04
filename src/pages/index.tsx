@@ -48,10 +48,10 @@ export const SignIn: NextPage = () => {
       </Head>
       <div className={styles.backgroundContainer} />
       <div className={styles.content}>
-        <img src="/logo-white.svg" alt="Move.it" />
+        <img src="/logo-white.svg" alt="Move.it" title="Move.it" />
         <h1>Bem-vindo</h1>
         <div>
-          <img src="icons/github.svg" alt="github" />
+          <img src="icons/github.svg" alt="github" title="github" />
           <p>Faça login com seu Github para começar</p>
         </div>
         <form onSubmit={handleSubmit}>
@@ -61,8 +61,9 @@ export const SignIn: NextPage = () => {
             placeholder="Digite seu username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            title="Digite seu username"
           />
-          <button type="submit">
+          <button type="submit" title="Logar">
             <FiArrowRight size={24} />
           </button>
         </form>

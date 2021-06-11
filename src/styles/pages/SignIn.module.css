@@ -22,6 +22,8 @@
 
 .content > img {
   margin-bottom: 5rem;
+  width: 350px;
+  height: 4.75rem;
 }
 
 .content > h1 {
@@ -34,6 +36,11 @@
   align-items: center;
   margin: 1rem 0;
   padding: 0.5rem 0;
+}
+
+.content > div img {
+  width: 3rem;
+  height: 3rem;
 }
 
 .content > div > p {
